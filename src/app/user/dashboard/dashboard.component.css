@@ -1,0 +1,42 @@
+/* Custom CSS for sticky sidebar */
+.sticky-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px; /* Adjust width as needed */
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* White text color */
+    overflow-y: auto; /* Allow sidebar to scroll if content overflows */
+}
+
+.sticky-sidebar h4 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sticky-sidebar ul.nav {
+    padding-left: 0;
+}
+
+.sticky-sidebar .nav-item {
+    list-style: none;
+}
+
+.sticky-sidebar .nav-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.sticky-sidebar .nav-link:hover {
+    background-color: #495057; /* Darker background on hover */
+}
+
+/* Adjustments for content */
+.content {
+    margin-left: 250px; /* Match the width of the sidebar */
+   
+    margin-top: 15px; /* Add margin on the top side */
+}
+

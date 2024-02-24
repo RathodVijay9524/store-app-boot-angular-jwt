@@ -15,7 +15,8 @@
                     [routerLink]="[m.link]"
                     routerLinkActive="active"
                 >
-                    <span class="ms-1"> {{ m.title }}</span>
+                <i-tabler [name]="m.icon"></i-tabler>
+                <span class="ms-1"> {{ m.title }}</span>
                 </a>
             </li>
         </ul>

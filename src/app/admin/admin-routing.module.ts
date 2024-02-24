@@ -6,6 +6,7 @@ import { adminUserGuard } from '../guard/admin-user.guard';
 
 
 const routes: Routes = [
+  //{path:'', redirectTo:'dashboard',pathMatch:'full'},
   {path:'', component:DashboardComponent,
   children:[
   {path:'users',

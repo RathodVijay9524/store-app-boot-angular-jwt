@@ -2,11 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { IconsModule } from '../../icons/icons.module';
+
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule,RouterModule,FormsModule,ReactiveFormsModule],
+  imports: [CommonModule,RouterModule,FormsModule,ReactiveFormsModule, IconsModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -16,13 +18,13 @@ export class DashboardComponent {
     {
       title: 'Home',
       link: '/admin/dashboard',
-      icon: 'circle-plus',
+      icon: 'home-check',
       cssClass: '',
     },
     {
       title: 'User',
       link: '/admin/users/list',
-      icon: 'circle-plus',
+      icon: 'users-group',
       cssClass: '',
     },
     {
@@ -46,12 +48,12 @@ export class DashboardComponent {
     {
       title: 'Payment',
       link: '/admin/payments/list',
-      icon: 'users-group',
+      icon: 'file-diff',
       cssClass: '',
     },  
     {
       title: 'Logout',
-      link: '#!',
+      link: '/logout',
       icon: 'logout-2',
       cssClass: '',
     },
